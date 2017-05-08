@@ -12,26 +12,24 @@ public class MaxOfN {
         System.out.println("enter how many nums");
 
         Scanner sc = new Scanner(System.in);
-         int n = sc.nextInt();
+        int n = sc.nextInt();
 
         System.out.println("enter a num");
 
-         int curmax = sc.nextInt();
+        int curMax = sc.nextInt();
 
-         for(int i = 1; i < n ;i++){
+        for (int i = 1; i < n; i++) {
 
+            System.out.println("enter num");
+            int j = sc.nextInt();
+            if (j >= curMax) {
+                curMax = j;
+            }
 
-             System.out.println("enter num");
-             int j = sc.nextInt();
-             if(j >= curmax){
-                 curmax = j;
-
-             }
-
-         }
-        System.out.println(" Maximum num is "  + curmax );
+        }
+        System.out.println(" Maximum num is " + curMax);
 
 
     }
 
-    }
+}
